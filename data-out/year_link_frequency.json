@@ -1,707 +1,848 @@
 {
   "1885": {
-    "totalArtists": 3,
-    "nArtistLinks": 3,
-    "avgPerArtist": 257
+    "totalArtists": 2,
+    "nArtistLinks": 2,
+    "avgPerArtist": 363,
+    "medianPerArtist": 363
   },
   "1886": {
-    "totalArtists": 3,
-    "nArtistLinks": 3,
-    "avgPerArtist": 257
+    "totalArtists": 2,
+    "nArtistLinks": 2,
+    "avgPerArtist": 363,
+    "medianPerArtist": 363
   },
   "1887": {
-    "totalArtists": 3,
-    "nArtistLinks": 3,
-    "avgPerArtist": 257
+    "totalArtists": 2,
+    "nArtistLinks": 2,
+    "avgPerArtist": 363,
+    "medianPerArtist": 363
   },
   "1888": {
-    "totalArtists": 4,
-    "nArtistLinks": 4,
-    "avgPerArtist": 193.5
+    "totalArtists": 3,
+    "nArtistLinks": 3,
+    "avgPerArtist": 243,
+    "medianPerArtist": 3
   },
   "1889": {
-    "totalArtists": 4,
-    "nArtistLinks": 4,
-    "avgPerArtist": 193.5
+    "totalArtists": 3,
+    "nArtistLinks": 3,
+    "avgPerArtist": 243,
+    "medianPerArtist": 3
   },
   "1890": {
-    "totalArtists": 5,
-    "nArtistLinks": 5,
-    "avgPerArtist": 194.8
+    "totalArtists": 4,
+    "nArtistLinks": 4,
+    "avgPerArtist": 232.25,
+    "medianPerArtist": 106
   },
   "1891": {
-    "totalArtists": 5,
-    "nArtistLinks": 5,
-    "avgPerArtist": 194.8
+    "totalArtists": 4,
+    "nArtistLinks": 4,
+    "avgPerArtist": 232.25,
+    "medianPerArtist": 106
   },
   "1892": {
-    "totalArtists": 5,
-    "nArtistLinks": 5,
-    "avgPerArtist": 194.8
+    "totalArtists": 4,
+    "nArtistLinks": 4,
+    "avgPerArtist": 232.25,
+    "medianPerArtist": 106
   },
   "1893": {
-    "totalArtists": 5,
-    "nArtistLinks": 5,
-    "avgPerArtist": 194.8
+    "totalArtists": 4,
+    "nArtistLinks": 4,
+    "avgPerArtist": 232.25,
+    "medianPerArtist": 106
   },
   "1894": {
-    "totalArtists": 5,
-    "nArtistLinks": 5,
-    "avgPerArtist": 194.8
+    "totalArtists": 4,
+    "nArtistLinks": 4,
+    "avgPerArtist": 232.25,
+    "medianPerArtist": 106
   },
   "1895": {
-    "totalArtists": 5,
-    "nArtistLinks": 5,
-    "avgPerArtist": 194.8
+    "totalArtists": 4,
+    "nArtistLinks": 4,
+    "avgPerArtist": 232.25,
+    "medianPerArtist": 106
   },
   "1896": {
-    "totalArtists": 5,
-    "nArtistLinks": 5,
-    "avgPerArtist": 194.8
+    "totalArtists": 4,
+    "nArtistLinks": 4,
+    "avgPerArtist": 232.25,
+    "medianPerArtist": 106
   },
   "1897": {
-    "totalArtists": 5,
-    "nArtistLinks": 5,
-    "avgPerArtist": 194.8
+    "totalArtists": 4,
+    "nArtistLinks": 4,
+    "avgPerArtist": 232.25,
+    "medianPerArtist": 106
   },
   "1898": {
-    "totalArtists": 5,
-    "nArtistLinks": 5,
-    "avgPerArtist": 194.8
+    "totalArtists": 4,
+    "nArtistLinks": 4,
+    "avgPerArtist": 232.25,
+    "medianPerArtist": 106
   },
   "1899": {
-    "totalArtists": 13,
-    "nArtistLinks": 13,
-    "avgPerArtist": 91.77
+    "totalArtists": 14,
+    "nArtistLinks": 14,
+    "avgPerArtist": 83.36,
+    "medianPerArtist": 3
   },
   "1900": {
-    "totalArtists": 31,
-    "nArtistLinks": 31,
-    "avgPerArtist": 350.48
+    "totalArtists": 33,
+    "nArtistLinks": 33,
+    "avgPerArtist": 334.58,
+    "medianPerArtist": 3183
   },
   "1901": {
-    "totalArtists": 33,
-    "nArtistLinks": 32,
-    "avgPerArtist": 345.31
+    "totalArtists": 35,
+    "nArtistLinks": 34,
+    "avgPerArtist": 330.18,
+    "medianPerArtist": 1593
   },
   "1902": {
-    "totalArtists": 33,
-    "nArtistLinks": 32,
-    "avgPerArtist": 345.31
+    "totalArtists": 36,
+    "nArtistLinks": 34,
+    "avgPerArtist": 330.18,
+    "medianPerArtist": 1593
   },
   "1903": {
-    "totalArtists": 33,
-    "nArtistLinks": 32,
-    "avgPerArtist": 345.31
+    "totalArtists": 36,
+    "nArtistLinks": 34,
+    "avgPerArtist": 330.18,
+    "medianPerArtist": 1593
   },
   "1904": {
-    "totalArtists": 34,
-    "nArtistLinks": 33,
-    "avgPerArtist": 422.39
+    "totalArtists": 38,
+    "nArtistLinks": 36,
+    "avgPerArtist": 472.44,
+    "medianPerArtist": 3
   },
   "1905": {
-    "totalArtists": 36,
-    "nArtistLinks": 35,
-    "avgPerArtist": 414.77
+    "totalArtists": 41,
+    "nArtistLinks": 39,
+    "avgPerArtist": 465.72,
+    "medianPerArtist": 3
   },
   "1906": {
-    "totalArtists": 37,
-    "nArtistLinks": 36,
-    "avgPerArtist": 404.47
+    "totalArtists": 42,
+    "nArtistLinks": 40,
+    "avgPerArtist": 455.18,
+    "medianPerArtist": 1593
   },
   "1907": {
-    "totalArtists": 40,
-    "nArtistLinks": 39,
-    "avgPerArtist": 402.54
+    "totalArtists": 45,
+    "nArtistLinks": 43,
+    "avgPerArtist": 449.88,
+    "medianPerArtist": 3
   },
   "1908": {
-    "totalArtists": 41,
-    "nArtistLinks": 40,
-    "avgPerArtist": 459.03
+    "totalArtists": 46,
+    "nArtistLinks": 44,
+    "avgPerArtist": 500.16,
+    "medianPerArtist": 3
   },
   "1909": {
-    "totalArtists": 42,
-    "nArtistLinks": 41,
-    "avgPerArtist": 449.24
+    "totalArtists": 48,
+    "nArtistLinks": 46,
+    "avgPerArtist": 480.91,
+    "medianPerArtist": 3
   },
   "1910": {
-    "totalArtists": 45,
-    "nArtistLinks": 44,
-    "avgPerArtist": 449.68
+    "totalArtists": 51,
+    "nArtistLinks": 49,
+    "avgPerArtist": 479.37,
+    "medianPerArtist": 3183
   },
   "1911": {
-    "totalArtists": 47,
-    "nArtistLinks": 46,
-    "avgPerArtist": 442.7
+    "totalArtists": 53,
+    "nArtistLinks": 51,
+    "avgPerArtist": 471.9,
+    "medianPerArtist": 3183
   },
   "1912": {
-    "totalArtists": 50,
-    "nArtistLinks": 49,
-    "avgPerArtist": 486.69
+    "totalArtists": 56,
+    "nArtistLinks": 54,
+    "avgPerArtist": 510.2,
+    "medianPerArtist": 3
   },
   "1913": {
-    "totalArtists": 50,
-    "nArtistLinks": 49,
-    "avgPerArtist": 486.69
+    "totalArtists": 56,
+    "nArtistLinks": 54,
+    "avgPerArtist": 510.2,
+    "medianPerArtist": 3
   },
   "1914": {
-    "totalArtists": 50,
-    "nArtistLinks": 49,
-    "avgPerArtist": 486.69
+    "totalArtists": 56,
+    "nArtistLinks": 54,
+    "avgPerArtist": 510.2,
+    "medianPerArtist": 3
   },
   "1915": {
-    "totalArtists": 50,
-    "nArtistLinks": 49,
-    "avgPerArtist": 486.69
+    "totalArtists": 56,
+    "nArtistLinks": 54,
+    "avgPerArtist": 510.2,
+    "medianPerArtist": 3
   },
   "1916": {
-    "totalArtists": 50,
-    "nArtistLinks": 49,
-    "avgPerArtist": 486.69
+    "totalArtists": 56,
+    "nArtistLinks": 54,
+    "avgPerArtist": 510.2,
+    "medianPerArtist": 3
   },
   "1917": {
-    "totalArtists": 50,
-    "nArtistLinks": 49,
-    "avgPerArtist": 486.69
+    "totalArtists": 56,
+    "nArtistLinks": 54,
+    "avgPerArtist": 510.2,
+    "medianPerArtist": 3
   },
   "1918": {
-    "totalArtists": 50,
-    "nArtistLinks": 49,
-    "avgPerArtist": 486.69
+    "totalArtists": 56,
+    "nArtistLinks": 54,
+    "avgPerArtist": 510.2,
+    "medianPerArtist": 3
   },
   "1919": {
-    "totalArtists": 52,
-    "nArtistLinks": 51,
-    "avgPerArtist": 522.43
+    "totalArtists": 58,
+    "nArtistLinks": 56,
+    "avgPerArtist": 541.91,
+    "medianPerArtist": 3
   },
   "1920": {
-    "totalArtists": 56,
-    "nArtistLinks": 55,
-    "avgPerArtist": 515.89
-  },
-  "1921": {
-    "totalArtists": 56,
-    "nArtistLinks": 55,
-    "avgPerArtist": 515.89
-  },
-  "1922": {
-    "totalArtists": 57,
-    "nArtistLinks": 56,
-    "avgPerArtist": 506.71
-  },
-  "1923": {
-    "totalArtists": 60,
-    "nArtistLinks": 58,
-    "avgPerArtist": 490.17
-  },
-  "1924": {
     "totalArtists": 62,
     "nArtistLinks": 60,
-    "avgPerArtist": 474.3
+    "avgPerArtist": 534.62,
+    "medianPerArtist": 3
+  },
+  "1921": {
+    "totalArtists": 63,
+    "nArtistLinks": 61,
+    "avgPerArtist": 527.36,
+    "medianPerArtist": 3
+  },
+  "1922": {
+    "totalArtists": 64,
+    "nArtistLinks": 62,
+    "avgPerArtist": 518.89,
+    "medianPerArtist": 3
+  },
+  "1923": {
+    "totalArtists": 67,
+    "nArtistLinks": 64,
+    "avgPerArtist": 503.52,
+    "medianPerArtist": 3
+  },
+  "1924": {
+    "totalArtists": 69,
+    "nArtistLinks": 66,
+    "avgPerArtist": 488.68,
+    "medianPerArtist": 3
   },
   "1925": {
-    "totalArtists": 67,
-    "nArtistLinks": 65,
-    "avgPerArtist": 442.6
+    "totalArtists": 75,
+    "nArtistLinks": 72,
+    "avgPerArtist": 454.18,
+    "medianPerArtist": 3
   },
   "1926": {
-    "totalArtists": 70,
-    "nArtistLinks": 68,
-    "avgPerArtist": 437.22
+    "totalArtists": 78,
+    "nArtistLinks": 75,
+    "avgPerArtist": 448.84,
+    "medianPerArtist": 3
   },
   "1927": {
-    "totalArtists": 72,
-    "nArtistLinks": 70,
-    "avgPerArtist": 433.26
+    "totalArtists": 80,
+    "nArtistLinks": 77,
+    "avgPerArtist": 444.94,
+    "medianPerArtist": 3
   },
   "1928": {
-    "totalArtists": 81,
-    "nArtistLinks": 78,
-    "avgPerArtist": 443.87
+    "totalArtists": 90,
+    "nArtistLinks": 85,
+    "avgPerArtist": 453.58,
+    "medianPerArtist": 3
   },
   "1929": {
-    "totalArtists": 85,
-    "nArtistLinks": 82,
-    "avgPerArtist": 481.87
+    "totalArtists": 94,
+    "nArtistLinks": 89,
+    "avgPerArtist": 488.15,
+    "medianPerArtist": 3
   },
   "1930": {
-    "totalArtists": 92,
-    "nArtistLinks": 89,
-    "avgPerArtist": 464.61
+    "totalArtists": 101,
+    "nArtistLinks": 96,
+    "avgPerArtist": 471.69,
+    "medianPerArtist": 3
   },
   "1931": {
-    "totalArtists": 93,
-    "nArtistLinks": 90,
-    "avgPerArtist": 459.47
+    "totalArtists": 102,
+    "nArtistLinks": 97,
+    "avgPerArtist": 466.85,
+    "medianPerArtist": 3
   },
   "1932": {
-    "totalArtists": 98,
-    "nArtistLinks": 95,
-    "avgPerArtist": 439.22
+    "totalArtists": 107,
+    "nArtistLinks": 102,
+    "avgPerArtist": 447.63,
+    "medianPerArtist": 3
   },
   "1933": {
-    "totalArtists": 100,
-    "nArtistLinks": 97,
-    "avgPerArtist": 430.93
+    "totalArtists": 109,
+    "nArtistLinks": 104,
+    "avgPerArtist": 439.73,
+    "medianPerArtist": 3
   },
   "1934": {
-    "totalArtists": 105,
-    "nArtistLinks": 102,
-    "avgPerArtist": 412.14
+    "totalArtists": 114,
+    "nArtistLinks": 109,
+    "avgPerArtist": 421.74,
+    "medianPerArtist": 3
   },
   "1935": {
-    "totalArtists": 110,
-    "nArtistLinks": 107,
-    "avgPerArtist": 429.84
+    "totalArtists": 121,
+    "nArtistLinks": 116,
+    "avgPerArtist": 430.48,
+    "medianPerArtist": 3
   },
   "1936": {
-    "totalArtists": 114,
-    "nArtistLinks": 110,
-    "avgPerArtist": 425.92
+    "totalArtists": 125,
+    "nArtistLinks": 119,
+    "avgPerArtist": 427.23,
+    "medianPerArtist": 3
   },
   "1937": {
-    "totalArtists": 118,
-    "nArtistLinks": 114,
-    "avgPerArtist": 412.39
+    "totalArtists": 129,
+    "nArtistLinks": 123,
+    "avgPerArtist": 414.64,
+    "medianPerArtist": 3
   },
   "1938": {
-    "totalArtists": 120,
-    "nArtistLinks": 117,
-    "avgPerArtist": 413.03
+    "totalArtists": 132,
+    "nArtistLinks": 127,
+    "avgPerArtist": 414.1,
+    "medianPerArtist": 3
   },
   "1939": {
-    "totalArtists": 128,
-    "nArtistLinks": 124,
-    "avgPerArtist": 395.52
+    "totalArtists": 140,
+    "nArtistLinks": 134,
+    "avgPerArtist": 397.84,
+    "medianPerArtist": 3
   },
   "1940": {
-    "totalArtists": 133,
-    "nArtistLinks": 129,
-    "avgPerArtist": 384.48
+    "totalArtists": 146,
+    "nArtistLinks": 140,
+    "avgPerArtist": 384.79,
+    "medianPerArtist": 3
   },
   "1941": {
-    "totalArtists": 139,
-    "nArtistLinks": 135,
-    "avgPerArtist": 384.49
+    "totalArtists": 152,
+    "nArtistLinks": 146,
+    "avgPerArtist": 384.78,
+    "medianPerArtist": 3
   },
   "1942": {
-    "totalArtists": 142,
-    "nArtistLinks": 138,
-    "avgPerArtist": 401.65
+    "totalArtists": 155,
+    "nArtistLinks": 149,
+    "avgPerArtist": 400.67,
+    "medianPerArtist": 3
   },
   "1943": {
-    "totalArtists": 144,
-    "nArtistLinks": 140,
-    "avgPerArtist": 396.16
+    "totalArtists": 157,
+    "nArtistLinks": 151,
+    "avgPerArtist": 395.59,
+    "medianPerArtist": 3
   },
   "1944": {
-    "totalArtists": 149,
-    "nArtistLinks": 145,
-    "avgPerArtist": 385.52
+    "totalArtists": 163,
+    "nArtistLinks": 157,
+    "avgPerArtist": 383.32,
+    "medianPerArtist": 3
   },
   "1945": {
-    "totalArtists": 154,
-    "nArtistLinks": 150,
-    "avgPerArtist": 373.87
+    "totalArtists": 168,
+    "nArtistLinks": 162,
+    "avgPerArtist": 372.6,
+    "medianPerArtist": 3
   },
   "1946": {
-    "totalArtists": 163,
-    "nArtistLinks": 159,
-    "avgPerArtist": 358.08
+    "totalArtists": 179,
+    "nArtistLinks": 173,
+    "avgPerArtist": 361.98,
+    "medianPerArtist": 3
   },
   "1947": {
-    "totalArtists": 166,
-    "nArtistLinks": 162,
-    "avgPerArtist": 352.58
+    "totalArtists": 182,
+    "nArtistLinks": 176,
+    "avgPerArtist": 356.86,
+    "medianPerArtist": 3
   },
   "1948": {
-    "totalArtists": 176,
-    "nArtistLinks": 172,
-    "avgPerArtist": 344.28
+    "totalArtists": 192,
+    "nArtistLinks": 186,
+    "avgPerArtist": 348.95,
+    "medianPerArtist": 3
   },
   "1949": {
-    "totalArtists": 191,
-    "nArtistLinks": 187,
-    "avgPerArtist": 328.04
+    "totalArtists": 209,
+    "nArtistLinks": 203,
+    "avgPerArtist": 336.32,
+    "medianPerArtist": 3
   },
   "1950": {
-    "totalArtists": 219,
-    "nArtistLinks": 214,
-    "avgPerArtist": 304.86
+    "totalArtists": 241,
+    "nArtistLinks": 234,
+    "avgPerArtist": 308.7,
+    "medianPerArtist": 3
   },
   "1951": {
-    "totalArtists": 236,
-    "nArtistLinks": 231,
-    "avgPerArtist": 303.57
+    "totalArtists": 261,
+    "nArtistLinks": 254,
+    "avgPerArtist": 303.75,
+    "medianPerArtist": 152
   },
   "1952": {
-    "totalArtists": 249,
-    "nArtistLinks": 243,
-    "avgPerArtist": 308.12
+    "totalArtists": 278,
+    "nArtistLinks": 270,
+    "avgPerArtist": 305.29,
+    "medianPerArtist": 330.5
   },
   "1953": {
-    "totalArtists": 272,
-    "nArtistLinks": 265,
-    "avgPerArtist": 292.66
+    "totalArtists": 306,
+    "nArtistLinks": 297,
+    "avgPerArtist": 287.04,
+    "medianPerArtist": 34
   },
   "1954": {
-    "totalArtists": 294,
-    "nArtistLinks": 286,
-    "avgPerArtist": 279.79
+    "totalArtists": 331,
+    "nArtistLinks": 320,
+    "avgPerArtist": 274.78,
+    "medianPerArtist": 190
   },
   "1955": {
-    "totalArtists": 331,
-    "nArtistLinks": 321,
-    "avgPerArtist": 259.15
+    "totalArtists": 373,
+    "nArtistLinks": 360,
+    "avgPerArtist": 258.48,
+    "medianPerArtist": 186
   },
   "1956": {
-    "totalArtists": 383,
-    "nArtistLinks": 369,
-    "avgPerArtist": 230.86
+    "totalArtists": 431,
+    "nArtistLinks": 414,
+    "avgPerArtist": 229.76,
+    "medianPerArtist": 322.5
   },
   "1957": {
-    "totalArtists": 441,
-    "nArtistLinks": 420,
-    "avgPerArtist": 211.65
+    "totalArtists": 499,
+    "nArtistLinks": 474,
+    "avgPerArtist": 210.13,
+    "medianPerArtist": 31
   },
   "1958": {
-    "totalArtists": 495,
-    "nArtistLinks": 464,
-    "avgPerArtist": 192.84
+    "totalArtists": 560,
+    "nArtistLinks": 525,
+    "avgPerArtist": 192.03,
+    "medianPerArtist": 30
   },
   "1959": {
-    "totalArtists": 534,
-    "nArtistLinks": 495,
-    "avgPerArtist": 183.25
+    "totalArtists": 612,
+    "nArtistLinks": 566,
+    "avgPerArtist": 182.12,
+    "medianPerArtist": 16.5
   },
   "1960": {
-    "totalArtists": 588,
-    "nArtistLinks": 546,
-    "avgPerArtist": 170.06
+    "totalArtists": 675,
+    "nArtistLinks": 625,
+    "avgPerArtist": 168.7,
+    "medianPerArtist": 3
   },
   "1961": {
-    "totalArtists": 643,
-    "nArtistLinks": 589,
-    "avgPerArtist": 159.89
+    "totalArtists": 735,
+    "nArtistLinks": 671,
+    "avgPerArtist": 159.8,
+    "medianPerArtist": 3
   },
   "1962": {
-    "totalArtists": 692,
-    "nArtistLinks": 629,
-    "avgPerArtist": 151.33
+    "totalArtists": 795,
+    "nArtistLinks": 720,
+    "avgPerArtist": 150.61,
+    "medianPerArtist": 3
   },
   "1963": {
-    "totalArtists": 763,
-    "nArtistLinks": 690,
-    "avgPerArtist": 141.37
+    "totalArtists": 876,
+    "nArtistLinks": 787,
+    "avgPerArtist": 140.82,
+    "medianPerArtist": 3
   },
   "1964": {
-    "totalArtists": 819,
-    "nArtistLinks": 736,
-    "avgPerArtist": 134.09
+    "totalArtists": 937,
+    "nArtistLinks": 839,
+    "avgPerArtist": 133.82,
+    "medianPerArtist": 3
   },
   "1965": {
-    "totalArtists": 895,
-    "nArtistLinks": 804,
-    "avgPerArtist": 125.73
+    "totalArtists": 1026,
+    "nArtistLinks": 915,
+    "avgPerArtist": 125.36,
+    "medianPerArtist": 3
   },
   "1966": {
-    "totalArtists": 977,
-    "nArtistLinks": 868,
-    "avgPerArtist": 121.42
+    "totalArtists": 1119,
+    "nArtistLinks": 990,
+    "avgPerArtist": 120.43,
+    "medianPerArtist": 3
   },
   "1967": {
-    "totalArtists": 1082,
-    "nArtistLinks": 953,
-    "avgPerArtist": 111.79
+    "totalArtists": 1242,
+    "nArtistLinks": 1090,
+    "avgPerArtist": 110.55,
+    "medianPerArtist": 3
   },
   "1968": {
-    "totalArtists": 1175,
-    "nArtistLinks": 1039,
-    "avgPerArtist": 103.95
+    "totalArtists": 1354,
+    "nArtistLinks": 1190,
+    "avgPerArtist": 102.59,
+    "medianPerArtist": 3
   },
   "1969": {
-    "totalArtists": 1258,
-    "nArtistLinks": 1107,
-    "avgPerArtist": 101.42
+    "totalArtists": 1459,
+    "nArtistLinks": 1273,
+    "avgPerArtist": 99.56,
+    "medianPerArtist": 3
   },
   "1970": {
-    "totalArtists": 1353,
-    "nArtistLinks": 1195,
-    "avgPerArtist": 96.3
+    "totalArtists": 1567,
+    "nArtistLinks": 1372,
+    "avgPerArtist": 94.5,
+    "medianPerArtist": 3
   },
   "1971": {
-    "totalArtists": 1437,
-    "nArtistLinks": 1266,
-    "avgPerArtist": 91.7
+    "totalArtists": 1669,
+    "nArtistLinks": 1458,
+    "avgPerArtist": 89.86,
+    "medianPerArtist": 3
   },
   "1972": {
-    "totalArtists": 1532,
-    "nArtistLinks": 1346,
-    "avgPerArtist": 89.12
+    "totalArtists": 1775,
+    "nArtistLinks": 1546,
+    "avgPerArtist": 87.3,
+    "medianPerArtist": 3
   },
   "1973": {
-    "totalArtists": 1604,
-    "nArtistLinks": 1412,
-    "avgPerArtist": 85.82
+    "totalArtists": 1868,
+    "nArtistLinks": 1630,
+    "avgPerArtist": 83.68,
+    "medianPerArtist": 3
   },
   "1974": {
-    "totalArtists": 1677,
-    "nArtistLinks": 1464,
-    "avgPerArtist": 83.37
+    "totalArtists": 1951,
+    "nArtistLinks": 1689,
+    "avgPerArtist": 81.36,
+    "medianPerArtist": 3
   },
   "1975": {
-    "totalArtists": 1756,
-    "nArtistLinks": 1527,
-    "avgPerArtist": 80.84
+    "totalArtists": 2046,
+    "nArtistLinks": 1765,
+    "avgPerArtist": 78.71,
+    "medianPerArtist": 3
   },
   "1976": {
-    "totalArtists": 1831,
-    "nArtistLinks": 1593,
-    "avgPerArtist": 79.51
+    "totalArtists": 2130,
+    "nArtistLinks": 1840,
+    "avgPerArtist": 77.35,
+    "medianPerArtist": 293
   },
   "1977": {
-    "totalArtists": 1910,
-    "nArtistLinks": 1654,
-    "avgPerArtist": 77.48
+    "totalArtists": 2233,
+    "nArtistLinks": 1920,
+    "avgPerArtist": 75.13,
+    "medianPerArtist": 29
   },
   "1978": {
-    "totalArtists": 1986,
-    "nArtistLinks": 1722,
-    "avgPerArtist": 74.89
+    "totalArtists": 2323,
+    "nArtistLinks": 1998,
+    "avgPerArtist": 72.64,
+    "medianPerArtist": 29
   },
   "1979": {
-    "totalArtists": 2068,
-    "nArtistLinks": 1788,
-    "avgPerArtist": 72.85
+    "totalArtists": 2427,
+    "nArtistLinks": 2082,
+    "avgPerArtist": 70.68,
+    "medianPerArtist": 156
   },
   "1980": {
-    "totalArtists": 2162,
-    "nArtistLinks": 1864,
-    "avgPerArtist": 70.72
+    "totalArtists": 2535,
+    "nArtistLinks": 2169,
+    "avgPerArtist": 68.64,
+    "medianPerArtist": 284
   },
   "1981": {
-    "totalArtists": 2258,
-    "nArtistLinks": 1941,
-    "avgPerArtist": 68.7
+    "totalArtists": 2649,
+    "nArtistLinks": 2259,
+    "avgPerArtist": 66.75,
+    "medianPerArtist": 28
   },
   "1982": {
-    "totalArtists": 2356,
-    "nArtistLinks": 2017,
-    "avgPerArtist": 66.9
+    "totalArtists": 2767,
+    "nArtistLinks": 2352,
+    "avgPerArtist": 65,
+    "medianPerArtist": 28
   },
   "1983": {
-    "totalArtists": 2446,
-    "nArtistLinks": 2096,
-    "avgPerArtist": 65.21
+    "totalArtists": 2873,
+    "nArtistLinks": 2441,
+    "avgPerArtist": 63.42,
+    "medianPerArtist": 28
   },
   "1984": {
-    "totalArtists": 2545,
-    "nArtistLinks": 2177,
-    "avgPerArtist": 63.51
+    "totalArtists": 2995,
+    "nArtistLinks": 2539,
+    "avgPerArtist": 61.72,
+    "medianPerArtist": 28
   },
   "1985": {
-    "totalArtists": 2644,
-    "nArtistLinks": 2258,
-    "avgPerArtist": 63.95
+    "totalArtists": 3116,
+    "nArtistLinks": 2640,
+    "avgPerArtist": 61.74,
+    "medianPerArtist": 28
   },
   "1986": {
-    "totalArtists": 2752,
-    "nArtistLinks": 2353,
-    "avgPerArtist": 62.28
+    "totalArtists": 3248,
+    "nArtistLinks": 2753,
+    "avgPerArtist": 60.06,
+    "medianPerArtist": 277
   },
   "1987": {
-    "totalArtists": 2860,
-    "nArtistLinks": 2443,
-    "avgPerArtist": 60.77
+    "totalArtists": 3381,
+    "nArtistLinks": 2864,
+    "avgPerArtist": 58.55,
+    "medianPerArtist": 151.5
   },
   "1988": {
-    "totalArtists": 2961,
-    "nArtistLinks": 2526,
-    "avgPerArtist": 60.95
+    "totalArtists": 3513,
+    "nArtistLinks": 2970,
+    "avgPerArtist": 58.56,
+    "medianPerArtist": 28
   },
   "1989": {
-    "totalArtists": 3084,
-    "nArtistLinks": 2634,
-    "avgPerArtist": 59.8
+    "totalArtists": 3682,
+    "nArtistLinks": 3116,
+    "avgPerArtist": 57.21,
+    "medianPerArtist": 28
   },
   "1990": {
-    "totalArtists": 3258,
-    "nArtistLinks": 2777,
-    "avgPerArtist": 58.37
+    "totalArtists": 3896,
+    "nArtistLinks": 3290,
+    "avgPerArtist": 55.72,
+    "medianPerArtist": 28
   },
   "1991": {
-    "totalArtists": 3425,
-    "nArtistLinks": 2928,
-    "avgPerArtist": 57.1
+    "totalArtists": 4106,
+    "nArtistLinks": 3477,
+    "avgPerArtist": 54.65,
+    "medianPerArtist": 28
   },
   "1992": {
-    "totalArtists": 3626,
-    "nArtistLinks": 3098,
-    "avgPerArtist": 55.78
+    "totalArtists": 4342,
+    "nArtistLinks": 3675,
+    "avgPerArtist": 53.35,
+    "medianPerArtist": 27
   },
   "1993": {
-    "totalArtists": 3816,
-    "nArtistLinks": 3264,
-    "avgPerArtist": 54.5
+    "totalArtists": 4576,
+    "nArtistLinks": 3875,
+    "avgPerArtist": 52.28,
+    "medianPerArtist": 276
   },
   "1994": {
-    "totalArtists": 4052,
-    "nArtistLinks": 3471,
-    "avgPerArtist": 53.65
+    "totalArtists": 4856,
+    "nArtistLinks": 4121,
+    "avgPerArtist": 51.41,
+    "medianPerArtist": 27
   },
   "1995": {
-    "totalArtists": 4328,
-    "nArtistLinks": 3711,
-    "avgPerArtist": 52.07
+    "totalArtists": 5194,
+    "nArtistLinks": 4407,
+    "avgPerArtist": 50.02,
+    "medianPerArtist": 28
   },
   "1996": {
-    "totalArtists": 4611,
-    "nArtistLinks": 3967,
-    "avgPerArtist": 50.89
+    "totalArtists": 5528,
+    "nArtistLinks": 4711,
+    "avgPerArtist": 48.84,
+    "medianPerArtist": 28
   },
   "1997": {
-    "totalArtists": 4846,
-    "nArtistLinks": 4169,
-    "avgPerArtist": 50.42
+    "totalArtists": 5827,
+    "nArtistLinks": 4969,
+    "avgPerArtist": 48.28,
+    "medianPerArtist": 28
   },
   "1998": {
-    "totalArtists": 5099,
-    "nArtistLinks": 4385,
-    "avgPerArtist": 49.84
+    "totalArtists": 6143,
+    "nArtistLinks": 5233,
+    "avgPerArtist": 47.85,
+    "medianPerArtist": 28
   },
   "1999": {
-    "totalArtists": 5402,
-    "nArtistLinks": 4645,
-    "avgPerArtist": 49.62
+    "totalArtists": 6519,
+    "nArtistLinks": 5551,
+    "avgPerArtist": 47.58,
+    "medianPerArtist": 28
   },
   "2000": {
-    "totalArtists": 5707,
-    "nArtistLinks": 4896,
-    "avgPerArtist": 48.82
+    "totalArtists": 6909,
+    "nArtistLinks": 5870,
+    "avgPerArtist": 46.7,
+    "medianPerArtist": 28
   },
   "2001": {
-    "totalArtists": 6063,
-    "nArtistLinks": 5208,
-    "avgPerArtist": 47.7
+    "totalArtists": 7368,
+    "nArtistLinks": 6263,
+    "avgPerArtist": 45.71,
+    "medianPerArtist": 28
   },
   "2002": {
-    "totalArtists": 6462,
-    "nArtistLinks": 5562,
-    "avgPerArtist": 46.69
+    "totalArtists": 7854,
+    "nArtistLinks": 6689,
+    "avgPerArtist": 44.77,
+    "medianPerArtist": 29
   },
   "2003": {
-    "totalArtists": 6887,
-    "nArtistLinks": 5913,
-    "avgPerArtist": 46.08
+    "totalArtists": 8385,
+    "nArtistLinks": 7125,
+    "avgPerArtist": 44.09,
+    "medianPerArtist": 28
   },
   "2004": {
-    "totalArtists": 7364,
-    "nArtistLinks": 6301,
-    "avgPerArtist": 45.15
+    "totalArtists": 8984,
+    "nArtistLinks": 7608,
+    "avgPerArtist": 43.13,
+    "medianPerArtist": 1588.5
   },
   "2005": {
-    "totalArtists": 7848,
-    "nArtistLinks": 6699,
-    "avgPerArtist": 44.4
+    "totalArtists": 9602,
+    "nArtistLinks": 8113,
+    "avgPerArtist": 42.35,
+    "medianPerArtist": 2893
   },
   "2006": {
-    "totalArtists": 8508,
-    "nArtistLinks": 7224,
-    "avgPerArtist": 43.53
+    "totalArtists": 10405,
+    "nArtistLinks": 8745,
+    "avgPerArtist": 41.55,
+    "medianPerArtist": 28
   },
   "2007": {
-    "totalArtists": 9171,
-    "nArtistLinks": 7767,
-    "avgPerArtist": 42.79
+    "totalArtists": 11245,
+    "nArtistLinks": 9429,
+    "avgPerArtist": 40.93,
+    "medianPerArtist": 28
   },
   "2008": {
-    "totalArtists": 9975,
-    "nArtistLinks": 8412,
-    "avgPerArtist": 42.02
+    "totalArtists": 12227,
+    "nArtistLinks": 10199,
+    "avgPerArtist": 40.31,
+    "medianPerArtist": 28
   },
   "2009": {
-    "totalArtists": 10801,
-    "nArtistLinks": 9120,
-    "avgPerArtist": 41.34
+    "totalArtists": 13235,
+    "nArtistLinks": 11053,
+    "avgPerArtist": 39.62,
+    "medianPerArtist": 28
   },
   "2010": {
-    "totalArtists": 11804,
-    "nArtistLinks": 9947,
-    "avgPerArtist": 40.5
+    "totalArtists": 14474,
+    "nArtistLinks": 12053,
+    "avgPerArtist": 38.88,
+    "medianPerArtist": 28
   },
   "2011": {
-    "totalArtists": 12824,
-    "nArtistLinks": 10830,
-    "avgPerArtist": 39.64
+    "totalArtists": 15761,
+    "nArtistLinks": 13142,
+    "avgPerArtist": 38.12,
+    "medianPerArtist": 28
   },
   "2012": {
-    "totalArtists": 13944,
-    "nArtistLinks": 11802,
-    "avgPerArtist": 38.59
+    "totalArtists": 17126,
+    "nArtistLinks": 14325,
+    "avgPerArtist": 37.28,
+    "medianPerArtist": 29
   },
   "2013": {
-    "totalArtists": 15148,
-    "nArtistLinks": 12886,
-    "avgPerArtist": 37.22
+    "totalArtists": 18586,
+    "nArtistLinks": 15621,
+    "avgPerArtist": 36.05,
+    "medianPerArtist": 29
   },
   "2014": {
-    "totalArtists": 16365,
-    "nArtistLinks": 14000,
-    "avgPerArtist": 36.07
+    "totalArtists": 20046,
+    "nArtistLinks": 16938,
+    "avgPerArtist": 34.95,
+    "medianPerArtist": 29
   },
   "2015": {
-    "totalArtists": 17626,
-    "nArtistLinks": 15167,
-    "avgPerArtist": 35.11
+    "totalArtists": 21541,
+    "nArtistLinks": 18312,
+    "avgPerArtist": 34.13,
+    "medianPerArtist": 29
   },
   "2016": {
-    "totalArtists": 18482,
-    "nArtistLinks": 16048,
-    "avgPerArtist": 34.27
+    "totalArtists": 22664,
+    "nArtistLinks": 19452,
+    "avgPerArtist": 33.24,
+    "medianPerArtist": 29
   },
   "2017": {
-    "totalArtists": 18446,
-    "nArtistLinks": 16182,
-    "avgPerArtist": 34.39
+    "totalArtists": 22631,
+    "nArtistLinks": 19625,
+    "avgPerArtist": 33.37,
+    "medianPerArtist": 29
   },
   "2018": {
-    "totalArtists": 17968,
-    "nArtistLinks": 15898,
-    "avgPerArtist": 34.89
+    "totalArtists": 22017,
+    "nArtistLinks": 19271,
+    "avgPerArtist": 33.87,
+    "medianPerArtist": 29
   },
   "2019": {
-    "totalArtists": 17393,
-    "nArtistLinks": 15526,
-    "avgPerArtist": 35.69
+    "totalArtists": 21279,
+    "nArtistLinks": 18795,
+    "avgPerArtist": 34.66,
+    "medianPerArtist": 29
   },
   "2020": {
-    "totalArtists": 16717,
-    "nArtistLinks": 15041,
-    "avgPerArtist": 36.66
+    "totalArtists": 20424,
+    "nArtistLinks": 18208,
+    "avgPerArtist": 35.58,
+    "medianPerArtist": 3
   },
   "2021": {
-    "totalArtists": 15838,
-    "nArtistLinks": 14417,
-    "avgPerArtist": 38.06
+    "totalArtists": 19285,
+    "nArtistLinks": 17408,
+    "avgPerArtist": 36.94,
+    "medianPerArtist": 3
   },
   "2022": {
-    "totalArtists": 14783,
-    "nArtistLinks": 13559,
-    "avgPerArtist": 39.68
+    "totalArtists": 17978,
+    "nArtistLinks": 16356,
+    "avgPerArtist": 38.52,
+    "medianPerArtist": 3
   },
   "2023": {
-    "totalArtists": 13300,
-    "nArtistLinks": 12333,
-    "avgPerArtist": 42.22
+    "totalArtists": 16117,
+    "nArtistLinks": 14834,
+    "avgPerArtist": 40.89,
+    "medianPerArtist": 3
   },
   "2024": {
-    "totalArtists": 10207,
-    "nArtistLinks": 9609,
-    "avgPerArtist": 48.88
+    "totalArtists": 12324,
+    "nArtistLinks": 11525,
+    "avgPerArtist": 47.35,
+    "medianPerArtist": 3
   },
   "2025": {
     "totalArtists": 1,
     "nArtistLinks": 1,
-    "avgPerArtist": 459
+    "avgPerArtist": 459,
+    "medianPerArtist": 459
   }
 }

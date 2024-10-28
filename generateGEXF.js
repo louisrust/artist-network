@@ -331,4 +331,5 @@ async function test() {
     console.log(artistsFiltered.length, staticEdges.length)
 }
 
+generateStaticGEXF()
 generateDynamicGEXF()

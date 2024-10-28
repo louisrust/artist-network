@@ -226,10 +226,5 @@ function exportArtistGenreFrequency() {
 exports.getMainGenre = getMainGenre
 
 if (require.main === module) { // if ran from terminal, export genre frequency
-    let artists = loadArtistData()
-    let checkedArtists = loadCheckedArtists()
-    let filteredArtists = filterArtistsChecked(artists, checkedArtists)
-    console.log(filteredArtists)
-
-    // exportArtistGenreFrequency()
+    exportArtistGenreFrequency()
 }

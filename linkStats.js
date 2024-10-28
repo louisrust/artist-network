@@ -15,6 +15,8 @@ function profile(fn, n=1) {
 }
 
 function arraySum(arr) {
+    if (arr.length==0) return 0
+
     let sum = 0
     for (let i=0; i<arr.length; i++) {
         sum += arr[i]
@@ -22,16 +24,8 @@ function arraySum(arr) {
     return sum;
 }
 function arrayAverage(arr) {
+    if (arr.length==0) return 0
     return arraySum(arr)/arr.length
-}
-function arrayMedian(arr) {
-    arr.sort()
-    let n = arr.length
-    if (n%2==0) {
-        return (arr[n/2-1]+arr[n/2])/2
-    } else {
-        return arr[Math.floor(n/2)]
-    }
 }
 function round(n, d=2) {
     return Math.round(n*Math.pow(10, d))/Math.pow(10, d)
@@ -148,8 +142,11 @@ function getStaticLinks(artistLinks) {
 function getArtistLinksCount(artistLinks) {
     let out = {}
     artistLinks.forEach(link => {
-        if (out[link.from]==undefined) out[link.from] = 0
-        out[link.from]++
+        let id = link.from
+        let year = link.year
+        if (out[id]==undefined) out[id] = {}
+        if (out[id][year]==undefined) out[id][year] = 0
+        out[id][year]++
     })
     return out
 }
@@ -168,7 +165,10 @@ function getYearLinkFrequency(yearsActiveMap, artistLinksCount) {
         // for each artist, count outgoing links
         let relatedLinks = {}
         artistIds.forEach(id => {
-            let nLinks = artistLinksCount[id]
+            let nLinks = 0
+            if (artistLinksCount[id] && artistLinksCount[id][year]) {
+                nLinks = artistLinksCount[id][year]
+            }
             if (nLinks>0) relatedLinks[id] = nLinks
         })
         let nArtistLinks = Object.keys(relatedLinks).length
@@ -176,14 +176,13 @@ function getYearLinkFrequency(yearsActiveMap, artistLinksCount) {
         // calculate average number of links per artist
         let linksPerArtist = Object.entries(relatedLinks).map(x => x[1])
         let avgPerArtist = round(arrayAverage(linksPerArtist))
-        let medianPerArtist = round(arrayMedian(linksPerArtist))
 
-        out[year] = {totalArtists, nArtistLinks, avgPerArtist, medianPerArtist}
+        out[year] = {totalArtists, nArtistLinks, avgPerArtist}
         
         let endTime = Date.now()
         let time = endTime-startTime
 
-        console.log(`year ${year}: ${totalArtists} artists, ${nArtistLinks} with links, avg ${avgPerArtist} links/artist, median ${medianPerArtist} links/artist, took ${time}ms`)
+        console.log(`year ${year}: ${totalArtists} artists, ${nArtistLinks} with links, avg ${avgPerArtist} links/artist, took ${time}ms`)
     })
 
     return out
@@ -193,33 +192,24 @@ function exportYearLinkFrequencyCSV(yearLinkFrequency) {
     const outPath = "./data-out/year_link_frequency.csv"
 
     if (fs.existsSync(outPath)) fs.unlinkSync(outPath)
-    let header = `year,totalArtists,nArtistLinks,avgPerArtist,medianPerArtist\n`
+    let header = `year,totalArtists,nArtistLinks,avgPerArtist\n`
     fs.appendFileSync(outPath, header)
 
     Object.entries(yearLinkFrequency).forEach(entry => {
         let year = entry[0]
-        let {totalArtists, nArtistLinks, avgPerArtist, medianPerArtist} = entry[1]
-        console.log(year, totalArtists, nArtistLinks, avgPerArtist, medianPerArtist)
+        let {totalArtists, nArtistLinks, avgPerArtist} = entry[1]
+        console.log(year, totalArtists, nArtistLinks, avgPerArtist)
     
-        let line = `${year},${totalArtists},${nArtistLinks},${avgPerArtist},${medianPerArtist}\n`
+        let line = `${year},${totalArtists},${nArtistLinks},${avgPerArtist}\n`
         fs.appendFileSync(outPath, line)
     })
-}
-
-function exportJSON(data, fileName) {
-    let path = `./data-out/${fileName}.json`
-    if (fs.existsSync(path)) fs.unlinkSync(path)
-    fs.writeFileSync(path, JSON.stringify(data, null, 2))
 }
 
 let yearsActiveRange = getYearsActiveRange()
 let artistLinks = loadArtistLinks()
 let yearsActiveMap = getArtistYearsMap(yearsActiveRange)
 
-let artistLinksStatic = getStaticLinks(artistLinks)
-let artistLinksCount = getArtistLinksCount(artistLinksStatic)
+let artistLinksCount = getArtistLinksCount(artistLinks)
 
 let yearLinkFrequency = getYearLinkFrequency(yearsActiveMap, artistLinksCount)
-
-exportJSON(yearLinkFrequency, "year_link_frequency")
 exportYearLinkFrequencyCSV(yearLinkFrequency)

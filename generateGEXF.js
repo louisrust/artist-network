@@ -1,5 +1,6 @@
 const fs = require("fs")
 const readline = require("readline")
+const genreGroup = require("./genreGroup.js")
 
 // returns array of all edges
 function loadAllEdges() {
@@ -85,6 +86,21 @@ async function loadFilteredArtists(checkedArtists) {
     return out
 }
 
+// function to load years active for each artist
+function loadYearsActiveMap() {
+    let yearsActiveMap = {}
+    let yearsActiveData = fs.readFileSync("./data/years_active.csv").toString().split("\n").splice(1).filter(x => x!="").map(x => x.split(","))
+    yearsActiveData.forEach(entry => {
+        let [id, yearsActive] = entry
+        let years = yearsActive.split(";").map(x => parseInt(x.split(":")[0]))
+        years = years.sort((a,b) => a-b).filter(x => !isNaN(x))
+        let min = years[0]
+        let max = years[years.length-1]
+        yearsActiveMap[id] = {min, max}
+    })
+    return yearsActiveMap
+}
+
 // returns edges without time data
 function getStaticEdges(allEdges) {
     // static edges, undirected
@@ -129,12 +145,15 @@ function getDynamicEdges(allEdges) {
 async function generateStaticGEXF() {
     const gexfOutPath = "./data-out/graph-static.gexf"
 
+    console.log("loading data")
     let allEdges = loadAllEdges() // get all edges
     let checkedArtists = loadCheckedArtists() // get artist filter
     let edgesFiltered = filterEdgesChecked(allEdges, checkedArtists) // filtered, directed, dynamic edges
     let staticEdges = getStaticEdges(edgesFiltered) // filtered, undirected, static edges
     
     let nodesFiltered = await loadFilteredArtists(checkedArtists) // filtered nodes
+
+    console.log("generating static gexf")
 
     // static, undirected graph
     let gexf = `<?xml version="1.0" encoding="UTF-8"?>
@@ -146,6 +165,7 @@ async function generateStaticGEXF() {
             <attributes class="node">
                 <attribute id="followers" title="Followers" type="integer" />
                 <attribute id="popularity" title="Popularity" type="integer" />
+                <attribute id="genre" title="Genre" type="string" />
             </attributes>
             <edges>\n`
     
@@ -166,10 +186,14 @@ async function generateStaticGEXF() {
         name = name.replaceAll("<", "&lt;")
         name = name.replaceAll(">", "&gt;")
 
+        // get main genre (using genreGroup.js function)
+        let genre = genreGroup.getMainGenre(node.genres)
+
         gexf += `<node id="${node.id}" label="${name}">
             <attvalues>
                 <attvalue for="followers" value="${node.followers}" />
                 <attvalue for="popularity" value="${node.popularity}" />
+                <attvalue for="genre" value="${genre}" />
             </attvalues>
         </node>\n`
     })
@@ -184,23 +208,117 @@ async function generateStaticGEXF() {
     console.log("done generating static gexf file")
 }
 
+function generateSpells(years) {
+    // sort years ascending
+    years = years.sort((a,b) => a-b)
+
+    let spells = []
+    let startYear = years[0]
+
+    for (let i = 1; i <= years.length; i++) {
+        if (i===years.length || years[i]!==years[i-1]+1) {
+            let endYear = years[i-1]
+            spells.push(`<spell start="${startYear}-01-01" end="${endYear}-12-31" />`)
+            startYear = years[i]
+        }
+    }
+
+    return spells.join("\n");
+}
+
 async function generateDynamicGEXF() {
+    const gexfOutPath = `./data-out/graph-dynamic.gexf`
+
+    console.log("loading data")
+    let allEdges = loadAllEdges() // get all edges
+    let checkedArtists = loadCheckedArtists() // get artist filter
+    let edgesFiltered = filterEdgesChecked(allEdges, checkedArtists) // filtered, directed, dynamic edges
+    let dynamicEdges = getDynamicEdges(edgesFiltered) // filtered, undirected, dynamic edges
+
+    let nodesFiltered = await loadFilteredArtists(checkedArtists) // filtered nodes
+    let yearsActiveMap = loadYearsActiveMap()
+
+    console.log("generating dynamic gexf")
+
     // dynamic, undirected graph
     let gexf = `<?xml version="1.0" encoding="UTF-8"?>
         <gexf xmlns="http://gexf.net/1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://gexf.net/1.3 http://gexf.net/1.3/gexf.xsd" version="1.3">        <meta lastmodifieddate="${new Date().toISOString().split("T")[0]}">
             <creator>Louis Rust</creator>
             <description>Artists Network Checked Only</description>
         </meta>
-        <graph mode="dynamic" defaultedgetype="undirected">
+        <graph mode="dynamic" defaultedgetype="undirected" timeformat="date">
             <attributes class="node">
                 <attribute id="followers" title="Followers" type="integer" />
                 <attribute id="popularity" title="Popularity" type="integer" />
+                <attribute id="genre" title="Genre" type="string" />
             </attributes>
             <edges>
     `
+
+    // convert edges to nicer format
+    let edges = Object.entries(dynamicEdges).map(edge => {
+        let [edgeString, years] = edge
+        let [source, target] = edgeString.split(":") // extract source and target
+        return {source, target, years}
+    })
+    // remove invalid edges
+    edges = edges.map(edge => {
+        edge.years = edge.years.filter(x => x>1000)
+        return edge
+    })
+    edges = edges.filter(edge => edge.years.length>0)
+
+    // insert edges
+    edges.forEach(edge => {
+        // generate spells
+        let spells = generateSpells(edge.years)
+        gexf += `<edge source="${edge.source}" target="${edge.target}">
+            <spells>
+                ${spells}
+            </spells>
+        </edge>\n`
+    })
+
+    gexf += `</edges>
+        <nodes>
+    `
+
+    // insert nodes
+    nodesFiltered.forEach(node => {
+        // make name XML friendly
+        let name = node.name.replaceAll("&", "&amp;")
+        name = name.replaceAll(`'`, "&apos;")
+        name = name.replaceAll(`"`, "&quot;")
+        name = name.replaceAll("<", "&lt;")
+        name = name.replaceAll(">", "&gt;")
+
+        // get main genre (using genreGroup.js function)
+        let genre = genreGroup.getMainGenre(node.genres)
+
+        // get years active
+        let yearsActive = yearsActiveMap[node.id]
+        if (yearsActive.min<1000 || yearsActive.min==undefined || yearsActive.max==undefined) return // remove invalid nodes
+
+        gexf += `<node id="${node.id}" label="${name}" start="${yearsActive.min}-01-01" end="${yearsActive.max}-12-31">
+            <attvalues>
+                <attvalue for="followers" value="${node.followers}" />
+                <attvalue for="popularity" value="${node.popularity}" />
+                <attvalue for="genre" value="${genre}" />
+            </attvalues>
+        </node>\n`
+    })
+
+    // end file
+    gexf += `</nodes></graph></gexf>`
+
+    // export
+    if (fs.existsSync(gexfOutPath)) fs.unlinkSync(gexfOutPath)
+    fs.writeFileSync(gexfOutPath, gexf)
+
+    console.log("done generating dynamic gexf file")
 }
 
-async function run() {
+async function test() {
     let allEdges = loadAllEdges()
     let checkedArtists = loadCheckedArtists()
     let edgesFiltered = filterEdgesChecked(allEdges, checkedArtists)
@@ -213,4 +331,4 @@ async function run() {
     console.log(artistsFiltered.length, staticEdges.length)
 }
 
-generateStaticGEXF()
+generateDynamicGEXF()

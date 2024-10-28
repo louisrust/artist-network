@@ -44,8 +44,6 @@ function includesWholeWord(text, word) {
 function groupGenres(genres) {
     // if a genre includes any of these words (keys), they will be mapped to a blanket genre (values)
     let includesMap = {
-        "sleep":"other",
-
         "bollywood": "world",
         "filmi":"world",
         "latino":"world", // latin
@@ -156,64 +154,82 @@ function groupGenres(genres) {
     })
 }
 
+function getMainGenre(genres) {
+    // map each genre to more generalised genre
+    let mappedGenres = groupGenres(genres).filter(x => x!="other")
+    if (mappedGenres.length==0) { // definitely an other
+        return 'other'
+    }
+    
+    // get frequency of each
+    let freq = {}
+    mappedGenres.forEach(genre => {
+        if (freq[genre]==null) freq[genre] = 0
+        freq[genre] += 1
+    })
+
+    // if only one genre, return it
+    if (Object.entries(freq).length==1) {
+        return Object.keys(freq)[0]
+    }
+
+    // order genre in order of frequency
+    let orderedGenres = Object.entries(freq).sort((a,b) => b[1]-a[1]).map(x => x[0])
+
+    // if winning genre, return it
+    if (freq[orderedGenres[0]]>freq[orderedGenres[1]]) {
+        return orderedGenres[0]
+    }
+
+    return 'multi'
+}
+
 function mapArtistGenres(artists) {
     return artists.map(artist => {
-        // map each genre to more generalised genre
-        let mappedGenres = groupGenres(artist.genres).filter(x => x!="other")
-        if (mappedGenres.length==0) { // definitely an other
-            artist.genres = 'other'
-            return artist
-        }
-        
-        // get frequency of each
-        let freq = {}
-        mappedGenres.forEach(genre => {
-            if (freq[genre]==null) freq[genre] = 0
-            freq[genre] += 1
-        })
-
-        // if only one genre, return it
-        if (Object.entries(freq).length==1) {
-            artist.genres = Object.keys(freq)[0]
-            return artist
-        }
-
-        // order genre in order of frequency
-        let orderedGenres = Object.entries(freq).sort((a,b) => b[1]-a[1]).map(x => x[0])
-
-        // if winning genre, return it
-        if (freq[orderedGenres[0]]>freq[orderedGenres[1]]) {
-            artist.genres = orderedGenres[0]
-            return artist
-        }
-
-        artist.genres = 'multi'
+        let mainGenre = getMainGenre(artist.genres)
+        artist.genres = mainGenre
         return artist
     })
 }
 
-let artists = loadArtistData()
+function exportArtistGenreFrequency() {
+    console.log("loading and filtering artists")
+    let artists = loadArtistData()
+    let checkedArtists = loadCheckedArtists()
+    let filteredArtists = filterArtistsChecked(artists, checkedArtists)
 
-// let genres = artists.map(x => { return x.genres}).flat()
-// console.log(new Set(genres).size, `unique genres in dataset`)
+    console.log("mapping genres")
+    let artistsGenreMapped = mapArtistGenres(filteredArtists)
 
-// let genresGrouped = groupGenres(genres)
-// console.log(new Set(genresGrouped).size, `total genres after grouping`)
+    console.log("calculating frequency and exporting")
+    let freq = {}
+    artistsGenreMapped.forEach(artist => {
+        let genre = artist.genres
+        if (freq[genre]==null) freq[genre] = 0
+        freq[genre] +=1
+    })
 
-// let genreFrequency = getGenreFrequency(genresGrouped)
-// console.log(new Set(Object.entries(genreFrequency).filter(x => x[1]>50).map(x => x[0])).size, `unique genres after grouping with 50 or more occurances`)
+    const pathOut = "./data-out/genre-frequency.csv"
+    if (fs.existsSync(pathOut)) fs.unlinkSync(pathOut)
 
-let checkedArtists = loadCheckedArtists()
-let filteredArtists = filterArtistsChecked(artists, checkedArtists)
-let artistGenresMapped = mapArtistGenres(filteredArtists)
+    const header = "genre,frequency\n"
+    fs.appendFileSync(pathOut, header)
 
-// frequency
-let artistGenreFrequency = {}
-artistGenresMapped.forEach(artist => {
-    if (artistGenreFrequency[artist.genres]==null) artistGenreFrequency[artist.genres] = 0
-    artistGenreFrequency[artist.genres] +=1
-})
+    Object.entries(freq).sort((a,b) => b[1]-a[1]).forEach(entry => {
+        fs.appendFileSync(pathOut, `${entry[0]},${entry[1]}\n`)
+    })
 
-Object.entries(artistGenreFrequency).forEach(entry => {
-    console.log(...entry)
-})
+    console.log("done")
+}
+
+// export functions
+exports.getMainGenre = getMainGenre
+
+if (require.main === module) { // if ran from terminal, export genre frequency
+    let artists = loadArtistData()
+    let checkedArtists = loadCheckedArtists()
+    let filteredArtists = filterArtistsChecked(artists, checkedArtists)
+    console.log(filteredArtists)
+
+    // exportArtistGenreFrequency()
+}
